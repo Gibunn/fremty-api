@@ -1,0 +1,2 @@
+export const DATABASE_CONNECTION_STRING = process.env.DATABASE_URL
+export const EXCLUDE_DATA_METHODS = ['POST', 'PATCH', 'PUT', 'DELETE'];
