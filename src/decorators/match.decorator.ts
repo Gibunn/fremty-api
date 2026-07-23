@@ -20,7 +20,7 @@ export function Match(property: string, validationOptions?: ValidationOptions) {
                 },
                 defaultMessage(args: ValidationArguments) {
                     const [relatedPropertyName] = args.constraints;
-                    return `${args.property} harus sama dengan ${relatedPropertyName}`;
+                    return `${args.property} must be the same as ${relatedPropertyName}`;
                 },
             },
         });

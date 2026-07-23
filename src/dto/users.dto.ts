@@ -24,6 +24,6 @@ export class CreateUserDTO {
 
     @IsString({ message: 'Confirmation password must be type string' })
     @IsNotEmpty({ message: 'Confirmation password cannot be empty' })
-    @Match('Password', { message: '' })
+    @Match('password', { message: 'Confirmation password does not match the password.' })
     confirm_password!: string;
 }

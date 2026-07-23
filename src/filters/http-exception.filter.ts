@@ -41,7 +41,7 @@ export class AllExceptionFilter implements ExceptionFilter {
             }
         } else if (exception instanceof Prisma.PrismaClientValidationError) {
             statusCode = HttpStatus.BAD_REQUEST
-            message = 'The submmited data does not match the expected schema';
+            message = `The submmited data does not match the expected schema`;
         }
 
         const base = {
