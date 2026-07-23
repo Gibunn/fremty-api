@@ -1,8 +1,7 @@
 import { CallHandler, ExecutionContext, Injectable, NestInterceptor } from "@nestjs/common";
 import { Observable } from "rxjs";
 import { map } from "rxjs/operators"
-
-const EXCLUDE_DATA_METHODS = ['POST', 'PATCH', 'PUT', 'DELETE'];
+import { EXCLUDE_DATA_METHODS } from "src/lib/constants";
 
 @Injectable()
 export class ResponseInterceptor implements NestInterceptor {
